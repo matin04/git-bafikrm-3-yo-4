@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+}
+@for $i from 1 through 16 {
+    .text-#{$i}{
+        width: #{$i 100}px;
+       
+        border: #{$i*5}px solid blue;
+        background-color: orange;
+        
+    }
+}
+@each $size in $razmer{
+    .bg-#{$size}{
+        width: 100px;
+        height: 100px;
+        background-color: $size;
+    }
+}
+
+.s{
+  background-color: black;
+  width: 100%;
+
+  .ss{
+    background-image: url(./Bg-hero.png);
+  }
+
+.s1{
+    // background-color: black;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    .s11{
+        display: flex;
+        gap: 20px;
+    }
+    .s12{
+        display: flex;
+        align-items: center;
+        button{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            width: 140px;
+            height: 40px;
+            margin: 40px 30px;
+            border-radius: 40px;
+        }
+    }
+
+}
+    
+       .s2{
+        padding: 120px 0;
+        text-align: center;
+        color: white;
+        h2{
+            font-size: 50px;
+            width: 520px;
+            margin: auto;
+        }
+        p{
+            width: 430px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        button{
+            color: rgb(0, 0, 0);
+            background-color: rgba(168, 255, 53, 1);
+            width: 160px;
+            height: 50px;
+            // margin: 0px 30px;
+            border-radius: 40px;
+        }
+       }
+
+       .s3{
+        display: flex;
+        // align-items: center;
+        height: 230px;
+        .s31
+        {
+        img{
+            position: absolute;
+            left: 120px;
+            transform: rotate(-5deg);
+        }
+    }
+    .s32{
+        img{
+            position: absolute;
+            top: 740px;
+            left: 320px;
+            transform: rotate(10deg);
+            
+        }
+    }
+    .s33{
+        img{
+            position: absolute;
+            left: 620px;
+            // transform: rotate(deg);
+        }
+    }
+    .s34{
+        img{
+            position: absolute;
+            left: 820px;
+            top: 740px;
+            transform: rotate(10deg);
+        }
+    }
+       }
+         
+
+}
+
+.s4{
+    background-color: rgba(168, 255, 53, 1);
+    width: 100%;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   align-items: center;
+   p{
+    width: 520px;
+   }
+   h2{
+    font-size: 50px;
+   }
+
+  
+}
+    .s42{
+margin: 40px 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 120px;
+        background-color: white;
+        border-radius: 10px;
+        img{
+            width: 180px;
+        }
+       
+
+}
+
+.s5{
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    h3{
+        font-size: 40px;
+        width: 58%;
+    }
+}
+
+.s6{
+    text-align: center;
+    padding: 50px 120px;
+    h4{
+        font-size: 40px;
+        padding: 60px 0;
+    }
+    .s61{
+        display: flex;
+        gap: 30px;
+        padding: 10px 0;
+    }
+    .s611{
+        width: 230px;
+        height: 80px;
+        background-color: rgba(245, 245, 245, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 120px;
+        }
+    }
+}
+
+.s7{
+    text-align: center;
+    padding: 40px 0 160px 0;
+    img{
+        padding: 60px 0;
+    }
+    h4{
+        font-size: 40px;
+        padding: 40px 0;
+    }
+     
+
+    .s71{
+        width: 80%;
+        height: 80px;
+        // background-color: aqua;
+        margin: auto;
+        // gap: 5px;
+        display: flex;
+        justify-content: space-between;
+        .s711{
+            // width: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    button{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        width: 150px;
+        height: 50px;
+       position: absolute;
+       top: 4480px;
+       left: 550px;
+        border-radius: 40px;
+    }
+}
+
+.s8{
+    height: 1050px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    h5{
+        font-size: 40px;
+        padding: 180px 0 30px 0;
+    }
+    .s81{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10PX;
+        img{
+            width: 60px;
+        }
+    }
+
+    .s82{
+        background-color: white;
+        color: black;
+        width: 340px;
+        height: 520px;
+        text-align: start;
+        border-radius: 10px;
+      
+    }
+    .s82a{
+        @extend .s82;
+        background-color: rgba(168, 255, 53, 1);
+        button{
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            width: 290px;
+            height: 40px;
+            margin: 80px 0px;
+            border-radius: 40px;
+        }
+    }
+.s821{
+   padding: 20px 20px;
+   h4{
+    font-size: 30px;
+   }
+   p{
+    padding: 15px 0;
+   }
+   .s821a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    h3{
+        font-size: 25px;
+    }
+   }
+   .s821b{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    padding: 20px 0;
+   }
+
+   button{
+    color: rgb(0, 0, 0);
+    background-color: rgba(168, 255, 53, 1);
+    width: 290px;
+    height: 40px;
+    margin: 80px 0px;
+    border-radius: 40px;
+}
+}
+.s820{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+    padding: 90px 0;
+}
+}
+
+.s9{
+    height: 540px;
+    background-color: rgba(168, 255, 53, 1);
+    text-align: center;
+    h5{
+        font-size: 50px;
+        padding: 170px 0 30px 0;
+    }
+    h4{
+        font-size: 48px;
+        color: rgb(174, 174, 174);
+    }
+    button{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        width: 150px;
+        height: 50px;
+        margin: 40px 30px;
+        border-radius: 40px;
+    }
+}
+
+.s10{
+    height: 90px;
+
+    .s101{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+       padding: 40px 0 20px 0;
+
+        .s102{
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
